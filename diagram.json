@@ -1,0 +1,163 @@
+{
+  "version": 1,
+  "author": "diy-keyboard",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-s3-devkitc-1",
+      "id": "esp",
+      "top": 230.22,
+      "left": -110.63,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "b00",
+      "top": -320.2,
+      "left": 67.2,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "b01",
+      "top": -320.2,
+      "left": 211.2,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "b02",
+      "top": -320.2,
+      "left": 355.2,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "b03",
+      "top": -320.2,
+      "left": 499.2,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "b10",
+      "top": -233.8,
+      "left": 86.4,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "b11",
+      "top": -233.8,
+      "left": 230.4,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "b12",
+      "top": -233.8,
+      "left": 374.4,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "b13",
+      "top": -233.8,
+      "left": 518.4,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "b20",
+      "top": -147.4,
+      "left": 105.6,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "b21",
+      "top": -147.4,
+      "left": 249.6,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "b22",
+      "top": -147.4,
+      "left": 393.6,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "b23",
+      "top": -147.4,
+      "left": 537.6,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "b30",
+      "top": -61,
+      "left": 124.8,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "b31",
+      "top": -61,
+      "left": 268.8,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "b32",
+      "top": -61,
+      "left": 412.8,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "b33",
+      "top": -61,
+      "left": 556.8,
+      "attrs": { "color": "green" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:4", "b00:1.l", "green", [ "v-182.4", "h172.75" ] ],
+    [ "b00:2.r", "esp:15", "blue", [ "v19.4", "h-479.8", "v403.2" ] ],
+    [ "esp:4", "b01:1.l", "green", [ "h38.35", "v-144", "h278.4" ] ],
+    [ "b01:2.r", "esp:16", "blue", [ "v29", "h-614.2", "v403.2" ] ],
+    [ "esp:4", "b02:1.l", "green", [ "h76.75", "v-105.6", "h384" ] ],
+    [ "b02:2.r", "esp:17", "blue", [ "v38.6", "h-748.6", "v403.2" ] ],
+    [ "esp:4", "b03:1.l", "green", [ "h115.15", "v-67.2", "h489.6" ] ],
+    [ "b03:2.r", "esp:18", "blue", [ "v48.2", "h-883", "v403.2" ] ],
+    [ "esp:5", "b10:1.l", "green", [ "h9.55", "v-182.4", "h182.4" ] ],
+    [ "b10:2.r", "esp:15", "blue", [ "v19.4", "h-460.6", "v508.8", "h201.65" ] ],
+    [ "esp:5", "b11:1.l", "green", [ "h47.95", "v-144", "h288" ] ],
+    [ "b11:2.r", "esp:16", "blue", [ "v29", "h-595", "v316.8" ] ],
+    [ "esp:5", "b12:1.l", "green", [ "h86.35", "v-105.6", "h393.6" ] ],
+    [ "b12:2.r", "esp:17", "blue", [ "v38.6", "h-729.4", "v316.8" ] ],
+    [ "esp:5", "b13:1.l", "green", [ "h124.75", "v-67.2", "h499.2" ] ],
+    [ "b13:2.r", "esp:18", "blue", [ "v48.2", "h-863.8", "v316.8" ] ],
+    [ "esp:6", "b20:1.l", "green", [ "h19.15", "v-182.4", "h192" ] ],
+    [ "b20:2.r", "esp:15", "blue", [ "v19.4", "h-441.4", "v230.4" ] ],
+    [ "esp:6", "b21:1.l", "green", [ "h57.55", "v-144", "h297.6" ] ],
+    [ "b21:2.r", "esp:16", "blue", [ "v29", "h-575.8", "v230.4" ] ],
+    [ "esp:6", "b22:1.l", "green", [ "h95.95", "v-105.6", "h403.2" ] ],
+    [ "b22:2.r", "esp:17", "blue", [ "v38.6", "h-710.2", "v230.4" ] ],
+    [ "esp:6", "b23:1.l", "green", [ "h134.35", "v-67.2", "h508.8" ] ],
+    [ "b23:2.r", "esp:18", "blue", [ "v48.2", "h-844.6", "v230.4" ] ],
+    [ "esp:7", "b30:1.l", "green", [ "h28.75", "v-182.4", "h201.6" ] ],
+    [ "b30:2.r", "esp:15", "blue", [ "v48.2", "h-422.2", "v307.2" ] ],
+    [ "esp:7", "b31:1.l", "green", [ "h67.15", "v-144", "h307.2" ] ],
+    [ "b31:2.r", "esp:16", "blue", [ "v57.8", "h-556.6", "v307.2" ] ],
+    [ "esp:7", "b32:1.l", "green", [ "h105.55", "v-105.6", "h412.8" ] ],
+    [ "esp:7", "b33:1.l", "green", [ "h143.95", "v-67.2", "h518.4" ] ],
+    [ "b33:2.r", "esp:18", "blue", [ "v77", "h-825.4", "v307.2" ] ],
+    [ "b32:2.r", "esp:17", "blue", [ "h0.2", "v67.4", "h-691.2", "v307.2" ] ]
+  ],
+  "dependencies": {}
+}
